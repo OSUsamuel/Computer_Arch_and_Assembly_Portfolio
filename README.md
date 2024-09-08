@@ -52,7 +52,7 @@ The project was called String Primitives and Macros and it was an amalgamation o
 <li><code style="color: black; background-color: #eeeeff;"><strong>ReadInt</strong></code>,&nbsp;<code style="color: black; background-color: #eeeeff;"><strong>ReadDec</strong></code>,&nbsp;<code style="color: black; background-color: #eeeeff;"><strong>WriteInt</strong></code>, and <code style="color: black; background-color: #eeeeff;"><strong>WriteDec</strong></code> are <strong>not allowed</strong> in this program.</li>
 <li><code style="color: black; background-color: #eeeeff;"><strong>mDisplayString</strong></code>&nbsp;must be used to display all strings.</li>
 <li>Conversion routines <strong>must</strong> appropriately use the <code style="color: black; background-color: #eeeeff;"><strong>LODSB</strong></code> and/or <code style="color: black; background-color: #eeeeff;"><strong>STOSB</strong></code> operators for dealing with strings.</li>
-<li>All procedure parameters <strong>must</strong> be passed on the runtime stack using the <strong>STDCall</strong> calling convention (see <a title="Exploration 1 - Passing Parameters on the Stack" href="https://canvas.oregonstate.edu/courses/1933672/pages/exploration-1-passing-parameters-on-the-stack" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1933672/pages/exploration-1-passing-parameters-on-the-stack" data-api-returntype="Page">Module 7, Exploration 1 - Passing Parameters on the Stack</a>). Strings also <strong>must</strong> be passed by reference.</li>
+<li>All procedure parameters <strong>must</strong> be passed on the runtime stack using the <strong>STDCall</strong> calling convention. Strings also <strong>must</strong> be passed by reference.</li>
 <li>Prompts, identifying strings, and other memory locations <strong>must</strong> be passed by address to the macros.</li>
 <li>Used registers <strong>must</strong> be saved and restored by the called procedures and macros.</li>
 <li>The stack frame <strong>must</strong> be cleaned up by the <strong>called</strong> procedure.</li>
@@ -60,14 +60,6 @@ The project was called String Primitives and Macros and it was an amalgamation o
 <li>The program <strong>must</strong> use <em>Register Indirect</em> addressing or string primitives (e.g. STOSD) for integer (SDWORD) array elements, and <em>Base+Offset</em> addressing for accessing parameters on the runtime stack.</li>
 <li>Procedures <strong>may</strong> use local variables when appropriate.</li>
 <li>The program <strong>must</strong> be fully documented and laid out according to the <span class="ally-file-link-holder link_holder"><span class="instructure_file_holder link_holder instructure_file_link_holder ally-file-link-holder"><a class="inline_disabled preview_in_overlay" title="CS271 Style Guide.pdf" href="https://canvas.oregonstate.edu/courses/1933672/files/100721639/download?wrap=1" data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/1933672/files/100721639" data-api-returntype="File" data-id="100721639">CS271 Style Guide</a><div class="inline-block ally-enhancement ally-user-content-dropdown">
-    <a href="#" role="button" tabindex="0" class="al-trigger">
-        <img style="width:16px; height:16px" src="/images/svg-icons/svg_icon_download.svg" alt="" role="presentation">
-        <span class="screenreader-only">Actions</span>
-    </a>
-    <ul class="al-options">
-        <li><a href="https://canvas.oregonstate.edu/courses/1933672/files/100721639/download?wrap=1" class="inline_disabled preview_in_overlay" data-id="100721639">Preview</a></li>
-        <li><a href="https://canvas.oregonstate.edu/courses/1933672/files/100721639/download?download_frd=1" data-id="100721639">Download</a></li>
-        <li><a href="#" class="ally-accessible-versions" data-id="100721639">Alternative formats</a></li>
-    </ul>
+    
 </div></span></span>. This includes a complete header block for identification, description, etc., a comment outline to explain each section of code, and proper procedure headers/documentation.</li>
 </ol>
